@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Search, X, Minus, Plus, CheckCircle } from 'lucide-react';
 import { TIPOS_VENDIBLES } from '../../services/ArticulosService';
 import { registrarVenta } from '../../services/ventasService';
-import ProductoVariantes from './ProductoVariantes';
+import ProductoVariantes from './Productovariantes';
 
 export default function VenderPage({ articulos, clientes, recargar, toast }) {
   const [clienteId, setClienteId] = useState('');
