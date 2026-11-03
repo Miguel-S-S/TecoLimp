@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import { Plus, Search, X, Edit3, EyeOff, Eye, Layers } from 'lucide-react';
-import VariantesEditor from './VariantesEditor';
+import VariantesEditor from './Varianteseditor';
 import {
   TIPOS_ARTICULO, TIPOS_VENDIBLES, guardarArticulo, ajustarStock, cambiarEstadoArticulo,
-} from '../../services/articulosService';
+} from '../../services/ArticulosService';
 
 const VACIO = {
   id: null, tipo: 'ProductoReventa', nombre: '', descripcion: '', categoria_id: '',
