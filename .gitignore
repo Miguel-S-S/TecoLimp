@@ -1,0 +1,33 @@
+# Dependencias
+node_modules/
+jspm_packages/
+
+# Variables de entorno y credenciales
+.env
+.env.local
+.env.*.local
+
+# Archivos de compilación y salida de Vite / build
+dist/
+build/
+.output/
+
+# Logs y errores de NPM / Git
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+logs
+*.log
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
