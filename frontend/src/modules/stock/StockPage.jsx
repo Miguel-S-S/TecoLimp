@@ -1,13 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { Plus, Search, X, Edit3, EyeOff, Eye, Layers } from 'lucide-react';
-import VariantesEditor from './Varianteseditor';
+import VariantesEditor from './VariantesEditor';
 import {
   TIPOS_ARTICULO, TIPOS_VENDIBLES, guardarArticulo, ajustarStock, cambiarEstadoArticulo,
 } from '../../services/ArticulosService';
 
 const VACIO = {
   id: null, tipo: 'ProductoReventa', nombre: '', descripcion: '', categoria_id: '',
-  unidad_codigo: 'u', stock: 0, precio_venta: '', costo_referencia: '',
+  unidad_codigo: 'un', stock: 0, precio_venta: '', costo_referencia: '',
 };
 
 export default function StockPage({ articulos, categorias, unidades, recargar, toast }) {

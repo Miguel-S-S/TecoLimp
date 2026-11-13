@@ -21,7 +21,7 @@ export default function ProductoVariantes({ padre, hijos, enCarrito, onAgregar }
   });
 
   const controla = variante?.controla_stock;
-  const stock = Number(variante?.stock || 0);
+  const stock = Number(variante?.stock_disponible ?? variante?.stock ?? 0);
   const agotado = variante && controla && stock <= 0;
   const antes = variante?.precio_anterior ? Number(variante.precio_anterior) : null;
   const precio = Number(variante?.precio_venta || 0);

@@ -23,11 +23,5 @@ export const ajustarStock = (articuloId, nuevoStock, motivo) =>
 export const cambiarEstadoArticulo = (articuloId, estado) =>
   supabase.rpc('articulo_cambiar_estado', { p_articulo: articuloId, p_estado: estado }).then(unwrap);
 
-// Transitorias hasta las Etapas 4 y 6
-export const crearPreparado = (nombre, precio, cantidad) =>
-  supabase.rpc('preparado_crear', { p_nombre: nombre, p_precio: precio, p_cantidad: cantidad }).then(unwrap);
-export const sumarStockPreparado = (articuloId, cantidad) =>
-  supabase.rpc('preparado_sumar_stock', { p_articulo: articuloId, p_cantidad: cantidad }).then(unwrap);
-
 export const guardarProductoConVariantes = (payload) =>
   supabase.rpc('articulo_variantes_guardar', { p: payload }).then(unwrap);
