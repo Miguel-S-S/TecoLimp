@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import useInventario from '../../hooks/useInventario';
-import StockPage from './Stockpage';
+import StockPage from './StockPage';
 import LotesPage from '../inventario/LotesPage';
 import MovimientosPage from '../inventario/MovimientosPage';
 import UbicacionesPage from '../inventario/UbicacionesPage';
